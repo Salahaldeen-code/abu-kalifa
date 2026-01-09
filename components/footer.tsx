@@ -1,10 +1,19 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { motion } from "framer-motion";
+import {
+  Instagram,
+  Facebook,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     "روابط سريعة": [
@@ -13,23 +22,26 @@ export function Footer() {
       { name: "من نحن", href: "/about" },
       { name: "تواصل معنا", href: "/contact" },
     ],
-    "خدماتنا": [
+    خدماتنا: [
       { name: "التأشيرات السياحية", href: "/services" },
       { name: "التأشيرات التجارية", href: "/services" },
       { name: "تأشيرات العمرة", href: "/services" },
       { name: "تصديق الوثائق", href: "/services" },
       { name: "الدعوات الرسمية", href: "/services" },
     ],
-  }
+  };
 
   const socialLinks = [
     { name: "Instagram", icon: Instagram, href: "#" },
     { name: "Facebook", icon: Facebook, href: "#" },
     { name: "Twitter", icon: Twitter, href: "#" },
-  ]
+  ];
 
   return (
-    <footer className="bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900 border-t border-gray-200" dir="rtl">
+    <footer
+      className="bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900 border-t border-gray-200"
+      dir="rtl"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-12">
@@ -41,9 +53,18 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">أبو خليفة</h3>
+              <Link href="/" className="inline-block mb-4">
+                <Image
+                  src="/Abu-_logo-1.png"
+                  alt="أبو خليفة"
+                  width={150}
+                  height={75}
+                  className="h-16 w-auto object-contain"
+                />
+              </Link>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                شركة متخصصة في خدمات التأشيرات والسفر، نقدم حلول موثوقة وسريعة للمسافرين، رجال الأعمال، والشركات.
+                شركة متخصصة في خدمات التأشيرات والسفر، نقدم حلول موثوقة وسريعة
+                للمسافرين، رجال الأعمال، والشركات.
               </p>
 
               <div className="space-y-3 mb-6">
@@ -93,7 +114,9 @@ export function Footer() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="font-bold text-gray-900 text-xl mb-4">{category}</h4>
+                  <h4 className="font-bold text-gray-900 text-xl mb-4">
+                    {category}
+                  </h4>
                   <ul className="space-y-3">
                     {links.map((link) => (
                       <li key={link.name}>
@@ -120,10 +143,11 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600">&copy; {currentYear} أبو خليفة للسفر والسياحة. جميع الحقوق محفوظة.</p>
+          <p className="text-gray-600">
+            &copy; {currentYear} أبو خليفة للسفر والسياحة. جميع الحقوق محفوظة.
+          </p>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }
-

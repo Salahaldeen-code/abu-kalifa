@@ -1,7 +1,7 @@
 "use client";
 
-import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { Header } from "@/components/homepage/header";
+import { Footer } from "@/components/homepage/footer";
 import { Hero } from "@/components/hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
@@ -21,7 +21,7 @@ import { Leva } from "leva";
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white" dir="rtl">
-      <Navigation />
+      <Header />
       <Hero
         title="من نحن"
         description="شركة متخصصة في خدمات التأشيرات والسفر بخبرة طويلة وسجل حافل من النجاح"

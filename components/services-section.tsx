@@ -25,28 +25,28 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/tourist-visa-passport-travel.jpg"
+              src="/visa.jpg"
               alt="التأشيرات السياحية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/business-visa-documents-professional.jpg"
+              src="/visa 2.jpg"
               alt="التأشيرات التجارية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/umrah-mecca-kaaba-pilgrimage.jpg"
+              src="/makah.jpg"
               alt="تأشيرات العمرة"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/tourist-visa-passport-travel.jpg"
+              src="/makah 2.jpg"
               alt="تأشيرات الزيارة"
               width={500}
               height={500}
@@ -109,7 +109,7 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/business-invitation-corporate-meeting.jpg"
+              src="/invite.jpg"
               alt="الدعوات التجارية"
               width={500}
               height={500}
@@ -155,14 +155,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/document-authentication-certification-official.jpg"
+              src="/stamp2.png"
               alt="تصديق الوثائق"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/document-authentication-certification-official.jpg"
+              src="/stamp.png"
               alt="تصديق وزارة الخارجية"
               width={500}
               height={500}
@@ -201,14 +201,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/business-invitation-corporate-meeting.jpg"
+              src="/company 1.jpg"
               alt="خدمات المعارض الدولية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/business-visa-documents-professional.jpg"
+              src="/company 2.jpg"
               alt="خدمات السفر لرجال الأعمال"
               width={500}
               height={500}
@@ -247,14 +247,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <img
-              src="/business-visa-documents-professional.jpg"
+              src="/doc 1.jpg"
               alt="الاستشارات"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/document-authentication-certification-official.jpg"
+              src="/doc 2.jpg"
               alt="تجهيز الملفات"
               width={500}
               height={500}
@@ -301,14 +301,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/travel-tourism-airplane-luggage.jpg"
+              src="/tourism 1.jpg"
               alt="خدمات السفر والسياحة"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/travel-tourism-airplane-luggage.jpg"
+              src="/tourism 2.jpg"
               alt="خدمات السفر"
               width={500}
               height={500}

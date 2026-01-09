@@ -2,8 +2,8 @@
 
 import type React from "react";
 
-import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { Header } from "@/components/homepage/header";
+import { Footer } from "@/components/homepage/footer";
 import { Hero } from "@/components/hero";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
+      <Header />
       <Hero
         title="تواصل معنا"
         description="نحن هنا للإجابة على أسئلتك وتقديم الدعم الذي تحتاجه. لا تتردد في التواصل معنا"

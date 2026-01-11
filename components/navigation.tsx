@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { href: "/", label: "الرئيسية" },
     { href: "/services", label: "خدماتنا" },
     { href: "/about", label: "من نحن" },
     { href: "/contact", label: "تواصل معنا" },
-  ]
+  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-border">
@@ -55,19 +55,22 @@ export function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 hover:bg-gray-100 rounded-lg">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 hover:bg-gray-100 rounded-lg text-gray-600"
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-border">
+          <div className="md:hidden pb-4 border-t border-white/30 bg-white/40 backdrop-blur-3xl rounded-2xl mt-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-3 text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors"
+                className="block px-4 py-3 text-gray-700 hover:bg-gray-100/50 hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
@@ -85,5 +88,5 @@ export function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

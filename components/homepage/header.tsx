@@ -188,7 +188,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-white"
+            className="lg:hidden p-2 text-gray-600"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -203,7 +203,12 @@ export function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div
-            className="lg:hidden py-6 glass-panel mt-2 rounded-2xl"
+            className={cn(
+              "lg:hidden py-6 mt-2 rounded-2xl border border-white/30",
+              isScrolled
+                ? "glass-panel"
+                : "bg-white/40 backdrop-blur-3xl shadow-lg"
+            )}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}

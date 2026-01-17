@@ -30,6 +30,26 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  openGraph: {
+    title: "أبو خليفة العالمية للسفر والسياحة | خدمات التأشيرات",
+    description: "خدمات تأشيرات موثوقة وسريعة، دعوات رسمية، وتصديق المستندات من أبو خليفة العالمية للسفر والسياحة",
+    images: [
+      {
+        url: "/Abu-_logo-1.png",
+        width: 1200,
+        height: 630,
+        alt: "أبو خليفة العالمية للسفر والسياحة",
+      },
+    ],
+    type: "website",
+    locale: "ar",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "أبو خليفة العالمية للسفر والسياحة | خدمات التأشيرات",
+    description: "خدمات تأشيرات موثوقة وسريعة، دعوات رسمية، وتصديق المستندات من أبو خليفة العالمية للسفر والسياحة",
+    images: ["/Abu-_logo-1.png"],
+  },
 }
 
 export default function RootLayout({

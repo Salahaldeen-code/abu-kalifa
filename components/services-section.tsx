@@ -15,6 +15,7 @@ import {
 export function ServicesSection() {
   const timelineData = [
     {
+      id: "visas",
       title: "خدمات التأشيرات",
       content: (
         <div>
@@ -23,31 +24,45 @@ export function ServicesSection() {
             مع متابعة دقيقة من البداية حتى صدور النتيجة. نضمن لك الحصول على
             التأشيرة المناسبة بسهولة وسرعة.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/visa.jpg"
+              src="/services/تاشيره سياحه .jpeg"
               alt="التأشيرات السياحية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/visa 2.jpg"
-              alt="التأشيرات التجارية"
+              src="/services/تاشيره .jpeg"
+              alt="التأشيرات"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/makah.jpg"
+              src="/services/تاشيره عمره.jpeg"
               alt="تأشيرات العمرة"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/makah 2.jpg"
-              alt="تأشيرات الزيارة"
+              src="/services/تاشيره  (2).jpeg"
+              alt="التأشيرات"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/تاشيره  (3).jpeg"
+              alt="التأشيرات"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/فيزه.jpeg"
+              alt="التأشيرات"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -99,6 +114,7 @@ export function ServicesSection() {
       ),
     },
     {
+      id: "invitations",
       title: "الدعوات الرسمية والتجارية ",
       content: (
         <div>
@@ -107,17 +123,45 @@ export function ServicesSection() {
             التجارية والحكومية. نضمن لك دعوات موثقة ومقبولة لدى السفارات والجهات
             الرسمية لضمان نجاح طلبك.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/invite.jpg"
+              src="/services/الدعوات التجاريه.jpeg"
               alt="الدعوات التجارية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/business-invitation-corporate-meeting.jpg"
+              src="/services/الدعوات التجاريه (2).jpeg"
+              alt="الدعوات التجارية"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/دعوى حكوميه.jpeg"
               alt="الدعوات الحكومية"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/الدعوات التجاريه (3).jpeg"
+              alt="الدعوات التجارية"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/الدعوات التجاريه (4).jpeg"
+              alt="الدعوات التجارية"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/الدعوات التجاريه (5).jpeg"
+              alt="الدعوات التجارية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -145,6 +189,7 @@ export function ServicesSection() {
       ),
     },
     {
+      id: "document-certification",
       title: "تصديق الوثائق والمستندات ",
       content: (
         <div>
@@ -155,15 +200,15 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/stamp2.png"
+              src="/services/تصديق وثاىق.jpeg"
               alt="تصديق الوثائق"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/stamp.png"
-              alt="تصديق وزارة الخارجية"
+              src="/services/تاشيره  (4).jpeg"
+              alt="تصديق الوثائق"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -191,6 +236,7 @@ export function ServicesSection() {
       ),
     },
     {
+      id: "business-services",
       title: "خدمات الشركات ورجال الأعمال ",
       content: (
         <div>
@@ -201,14 +247,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/company 1.jpg"
-              alt="خدمات المعارض الدولية"
+              src="/services/حجز تذاكر.jpeg"
+              alt="حجز تذاكر الطيران"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/company 2.jpg"
+              src="/services/تاشيره  (5).jpeg"
               alt="خدمات السفر لرجال الأعمال"
               width={500}
               height={500}
@@ -237,6 +283,7 @@ export function ServicesSection() {
       ),
     },
     {
+      id: "consulting-services",
       title: "الخدمات الاستشارية والمساندة ",
       content: (
         <div>
@@ -247,15 +294,15 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <img
-              src="/doc 1.jpg"
-              alt="الاستشارات"
+              src="/services/موافقه امنيه .jpeg"
+              alt="الموافقات الأمنية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/doc 2.jpg"
-              alt="تجهيز الملفات"
+              src="/services/تاشيره  (6).jpeg"
+              alt="الاستشارات والمساندة"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -291,6 +338,7 @@ export function ServicesSection() {
       ),
     },
     {
+      id: "tourism-services",
       title: "خدمات السفر والسياحة الشاملة",
       content: (
         <div>
@@ -299,16 +347,23 @@ export function ServicesSection() {
             تفاصيلها. من التخطيط إلى التنفيذ، نساعدك في تنظيم رحلاتك بسهولة
             وضمان تجربة سفر ممتعة ومريحة.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/tourism 1.jpg"
+              src="/services/حجز تذاكر.jpeg"
+              alt="حجز تذاكر الطيران"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="/services/تاشيره  (7).jpeg"
               alt="خدمات السفر والسياحة"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/tourism 2.jpg"
+              src="/services/تاشيره  (8).jpeg"
               alt="خدمات السفر"
               width={500}
               height={500}

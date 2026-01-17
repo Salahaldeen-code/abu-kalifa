@@ -107,7 +107,7 @@ export default function HomePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
-                أبو خليفة للسفر والسياحة
+                أبو خليفة العالمية للسفر والسياحة
               </motion.h2>
 
               {/* Loading Spinner */}
@@ -166,7 +166,7 @@ export default function HomePage() {
 
         {/* WhatsApp Floating Button */}
         <motion.a
-          href="https://wa.me/967770115540"
+          href="https://wa.me/96890938925"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20BA5A] transition-colors duration-300 group"

@@ -55,6 +55,45 @@ export default function ContactPage() {
     }, 3000);
   };
 
+  const getSubjectLabel = (value: string) => {
+    const subjects: { [key: string]: string } = {
+      "tourist-visa": "تأشيرة سياحية",
+      "business-visa": "تأشيرة تجارية",
+      "umrah-visa": "تأشيرة عمرة",
+      "invitation": "دعوة رسمية",
+      "document-certification": "تصديق وثائق",
+      "consultation": "استشارة",
+      "other": "أخرى",
+    };
+    return subjects[value] || value;
+  };
+
+  const handleWhatsAppClick = () => {
+    // Check if form has any data
+    const hasData = Object.values(formData).some((value) => value.trim() !== "");
+    
+    if (!hasData) {
+      // If no data, just open WhatsApp normally
+      window.open("https://wa.me/96890938925", "_blank");
+      return;
+    }
+
+    // Format the message with form data
+    const message = `مرحباً، أريد التواصل بخصوص:
+
+الاسم: ${formData.firstName} ${formData.lastName}
+البريد الإلكتروني: ${formData.email}
+رقم الهاتف: ${formData.phone}
+الموضوع: ${getSubjectLabel(formData.subject)}
+الرسالة: ${formData.message}`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/96890938925?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -75,12 +114,11 @@ export default function ContactPage() {
                 الهاتف والواتساب
               </h3>
               <div className="space-y-2 text-gray-600 flex-1">
-                <p>+967 770 115 540</p>
-                <p>+967 781 115 200</p>
-                <p>+968 9093 8925</p>
+                <p>+967770115540</p>
+                <p>0096890938925</p>
               </div>
               <a
-                href="https://wa.me/967770115540"
+                href="https://wa.me/96890938925"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-6 px-4 py-2 bg-[#458A47] text-white rounded-lg hover:bg-[#458A47]/90 transition-colors font-bold text-sm"
@@ -95,9 +133,9 @@ export default function ContactPage() {
               <h3 className="text-xl font-bold text-primary mb-4">
                 البريد الإلكتروني
               </h3>
-              <p className="text-gray-600 mb-6 flex-1">info@abokhalifa.com</p>
+              <p className="text-gray-600 mb-6 flex-1">ABUKHALIFATRAVEL@GMAIL.COM</p>
               <a
-                href="mailto:info@abokhalifa.com"
+                href="mailto:ABUKHALIFATRAVEL@GMAIL.COM"
                 className="block px-4 py-2 bg-[#458A47] text-white rounded-lg hover:bg-[#458A47]/90 transition-colors font-bold text-sm"
               >
                 أرسل بريد إلكتروني
@@ -283,14 +321,13 @@ export default function ContactPage() {
                 >
                   إرسال الرسالة
                 </Button>
-                <a
-                  href="https://wa.me/967770115540"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={handleWhatsAppClick}
                   className="flex-1 flex items-center justify-center bg-secondary hover:bg-orange-600 text-white py-3 rounded-lg font-bold text-lg transition-colors"
                 >
                   واتساب
-                </a>
+                </button>
               </div>
             </form>
           </Card>
@@ -337,7 +374,7 @@ export default function ContactPage() {
 
       {/* Fixed WhatsApp Button */}
       <a
-        href="https://wa.me/967770115540"
+        href="https://wa.me/96890938925"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors z-40"

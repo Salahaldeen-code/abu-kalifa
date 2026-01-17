@@ -10,8 +10,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _cairo = Cairo({ subsets: ["arabic"] })
 
 export const metadata: Metadata = {
-  title: "أبو خليفة للسفر والسياحة | خدمات التأشيرات",
-  description: "خدمات تأشيرات موثوقة وسريعة، دعوات رسمية، وتصديق المستندات من أبو خليفة للسفر والسياحة",
+  title: "أبو خليفة العالمية للسفر والسياحة | خدمات التأشيرات",
+  description: "خدمات تأشيرات موثوقة وسريعة، دعوات رسمية، وتصديق المستندات من أبو خليفة العالمية للسفر والسياحة",
   generator: "v0.app",
   icons: {
     icon: [

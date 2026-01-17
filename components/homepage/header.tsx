@@ -172,7 +172,7 @@ export function Header() {
           {/* Contact Info */}
           <div className="hidden lg:flex items-center gap-4">
             <motion.a
-              href="tel:+123456789"
+              href="tel:0096890938925"
               className={cn(
                 "flex items-center gap-2 text-sm font-medium transition-colors",
                 isScrolled
@@ -182,7 +182,7 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
             >
               <Phone className="w-4 h-4" />
-              <span>+123 456 789</span>
+              <span>0096890938925</span>
             </motion.a>
           </div>
 

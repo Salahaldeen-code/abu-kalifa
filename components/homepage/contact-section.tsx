@@ -211,7 +211,7 @@ export function ContactSection() {
                   إرسال الرسالة
                 </Button>
                 <a
-                  href="https://wa.me/967770115540"
+                  href="https://wa.me/96890938925"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center bg-secondary hover:bg-orange-600 text-white py-3 rounded-lg font-bold text-lg transition-colors"

@@ -32,9 +32,9 @@ export function Footer() {
   };
 
   const socialLinks = [
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/abbasadnan323" },
+    { name: "Facebook", icon: Facebook, href: "https://share.google/nmlPB59FCz6WmGkj5" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj" },
   ];
 
   return (
@@ -70,15 +70,17 @@ export function Footer() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-gray-600">
                   <Phone className="w-5 h-5 text-[#F5951C]" />
-                  <span dir="ltr">+967 770 115 540</span>
+                  <span>رقم عمان:</span>
+                  <span dir="ltr">0096890938925</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
                   <Phone className="w-5 h-5 text-[#F5951C]" />
-                  <span dir="ltr">+968 9093 8925</span>
+                  <span>رقم اليمني:</span>
+                  <span dir="ltr">+967770115540</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
                   <Mail className="w-5 h-5 text-[#F5951C]" />
-                  <span dir="ltr">info@abokhalifa.com</span>
+                  <span dir="ltr">ABUKHALIFATRAVEL@GMAIL.COM</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
                   <MapPin className="w-5 h-5 text-[#F5951C]" />
@@ -91,6 +93,8 @@ export function Footer() {
                   <motion.a
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 hover:bg-[#458A47] hover:text-white transition-all duration-300"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.95 }}
@@ -144,7 +148,7 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-gray-600">
-            &copy; {currentYear} أبو خليفة للسفر والسياحة. جميع الحقوق محفوظة.
+            &copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق محفوظة.
           </p>
         </motion.div>
       </div>

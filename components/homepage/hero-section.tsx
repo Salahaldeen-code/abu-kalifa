@@ -196,7 +196,7 @@ export function HeroSection() {
       >
         <Image
           src="/house-landscape-pool-relaxation-garden.jpg"
-          alt="أبو خليفه للسفر والسياحة"
+          alt="أبو خليفة العالمية للسفر والسياحة"
           fill
           className="object-cover"
           priority
@@ -313,7 +313,7 @@ export function HeroSection() {
                 </Button>
               </motion.a>
               <motion.a
-                href="https://wa.me/967770115540"
+                href="https://wa.me/96890938925"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative"

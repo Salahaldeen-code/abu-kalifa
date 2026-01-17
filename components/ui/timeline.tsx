@@ -10,6 +10,7 @@ import React, { useEffect, useRef, useState } from "react";
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
+  id?: string;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -73,7 +74,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            id={item.id || `service-${index}`}
+            className="flex justify-start pt-10 md:pt-40 md:gap-10 scroll-mt-40"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute right-3 md:right-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">

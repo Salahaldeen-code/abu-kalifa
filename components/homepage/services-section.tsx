@@ -6,8 +6,8 @@ import {
   Briefcase,
   FileCheck,
   Building2,
-  MessageCircle,
   Globe,
+  Heart,
 } from "lucide-react";
 import { Reveal } from "./reveal";
 import Link from "next/link";
@@ -16,38 +16,43 @@ export function ServicesSection() {
   const services = [
     {
       icon: Plane,
-      title: "خدمات التأشيرات",
+      title: "التأشيرات",
       description:
         "نقدم مجموعة شاملة ومتكاملة من خدمات التأشيرات لجميع احتياجات السفر، مع متابعة دقيقة من البداية حتى صدور النتيجة",
       color: "from-[#458A47] to-[#458A47]/80",
+      href: "/services#visas",
+    },
+    {
+      icon: Heart,
+      title: "سياحة علاجية",
+      description:
+        "نوفر برامج سياحة علاجية متكاملة في أفضل المراكز الطبية والمستشفيات العالمية مع تنظيم كامل للرحلة العلاجية",
+      color: "from-[#F5951C] to-[#F5951C]/80",
+      href: "/services#tourism-services",
+    },
+    {
+      icon: FileCheck,
+      title: "تصديق مستندات والوثائق",
+      description:
+        "نقدم خدمة تصديق شاملة لجميع أنواع الوثائق والمستندات في السفارات ووزارة الخارجية",
+      color: "from-[#458A47] to-[#F5951C]",
+      href: "/services#document-certification",
+    },
+    {
+      icon: Building2,
+      title: "خدمات رجال الأعمال",
+      description:
+        "نقدم حلولاً متكاملة وشاملة لتسهيل سفر الشركات ورجال الأعمال من خدمات المعارض الدولية إلى متابعة ملفات الشركات",
+      color: "from-[#F5951C] to-[#458A47]",
+      href: "/services#business-services",
     },
     {
       icon: Briefcase,
       title: "الدعوات الرسمية والتجارية",
       description:
         "نوفر دعوات رسمية معتمدة من الجهات المختصة لتسهيل استخراج التأشيرات التجارية والحكومية",
-      color: "from-[#F5951C] to-[#F5951C]/80",
-    },
-    {
-      icon: FileCheck,
-      title: "تصديق الوثائق والمستندات",
-      description:
-        "نقدم خدمة تصديق شاملة لجميع أنواع الوثائق والمستندات في السفارات ووزارة الخارجية",
-      color: "from-[#458A47] to-[#F5951C]",
-    },
-    {
-      icon: Building2,
-      title: "خدمات الشركات ورجال الأعمال",
-      description:
-        "نقدم حلولاً متكاملة وشاملة لتسهيل سفر الشركات ورجال الأعمال من خدمات المعارض الدولية إلى متابعة ملفات الشركات",
-      color: "from-[#F5951C] to-[#458A47]",
-    },
-    {
-      icon: MessageCircle,
-      title: "الخدمات الاستشارية والمساندة",
-      description:
-        "نقدم خدمات استشارية ومساندة شاملة ومهنية لتسهيل عملية الحصول على التأشيرات",
       color: "from-[#458A47] to-[#458A47]/80",
+      href: "/services#invitations",
     },
     {
       icon: Globe,
@@ -55,6 +60,7 @@ export function ServicesSection() {
       description:
         "نقدم خدمات السفر والسياحة الشاملة والمتكاملة لتنظيم رحلاتك بكل تفاصيلها من التخطيط إلى التنفيذ",
       color: "from-[#458A47] to-[#F5951C]",
+      href: "/services#tourism-services",
     },
   ];
 
@@ -110,13 +116,15 @@ export function ServicesSection() {
                     {service.description}
                   </p>
 
-                  <motion.div
-                    className="mt-6 text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all"
-                    whileHover={{ x: 5 }}
-                  >
-                    <span>اعرف المزيد</span>
-                    <span>←</span>
-                  </motion.div>
+                  <Link href={service.href}>
+                    <motion.div
+                      className="mt-6 text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all cursor-pointer"
+                      whileHover={{ x: 5 }}
+                    >
+                      <span>اعرف المزيد</span>
+                      <span>←</span>
+                    </motion.div>
+                  </Link>
                 </div>
               </motion.div>
             </Reveal>
@@ -127,7 +135,7 @@ export function ServicesSection() {
         <Reveal delay={0.6}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16">
             <motion.a
-              href="https://wa.me/967770115540"
+              href="https://wa.me/96890938925"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-[#458A47] text-white rounded-lg font-semibold text-center hover:bg-[#458A47]/90 transition-all shadow-lg hover:shadow-xl"

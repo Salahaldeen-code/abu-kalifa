@@ -10,25 +10,23 @@ export function Footer() {
 
   const footerLinks = {
     "روابط سريعة": [
-      { name: "الرئيسية", href: "#" },
-      { name: "خدماتنا", href: "#services" },
-      { name: "الوجهات", href: "#destinations" },
-      { name: "عن الشركة", href: "#about" },
-      { name: "اتصل بنا", href: "#contact" },
+      { name: "الرئيسية", href: "/" },
+      { name: "خدماتنا", href: "/services" },
+      { name: "الوجهات", href: "/#destinations" },
+      { name: "عن الشركة", href: "/about" },
+      { name: "اتصل بنا", href: "/contact" },
     ],
     خدماتنا: [
-      { name: "حجز الطيران", href: "#" },
-      { name: "حجز الفنادق", href: "#" },
-      { name: "تأجير السيارات", href: "#" },
-      { name: "جولات سياحية", href: "#" },
-      { name: "رحلات بحرية", href: "#" },
+      { name: "حجز الطيران", href: "/services" },
+      { name: "حجز الفنادق", href: "/services" },
+      { name: "جولات سياحية", href: "/services" },
     ],
   }
 
   const socialLinks = [
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/abbasadnan323" },
+    { name: "Facebook", icon: Facebook, href: "https://share.google/nmlPB59FCz6WmGkj5" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj" },
   ]
 
   return (
@@ -53,7 +51,7 @@ export function Footer() {
                   className="h-16 w-auto object-contain mb-2"
                 />
               </Link>
-              <h3 className="text-3xl font-bold text-primary mb-4">أبو خليفة</h3>
+              <h3 className="text-3xl font-bold text-primary mb-4">أبو خليفة العالمية للسفر والسياحة</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
                 شركة رائدة في مجال السفر والسياحة، نقدم أفضل الخدمات لجعل رحلاتكم تجربة لا تُنسى منذ أكثر من 20 عاماً.
               </p>
@@ -61,11 +59,17 @@ export function Footer() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span dir="ltr">+966 12 345 6789</span>
+                  <span>رقم عمان:</span>
+                  <span dir="ltr">0096890938925</span>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <span>رقم اليمني:</span>
+                  <span dir="ltr">+967770115540</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span dir="ltr">info@abukhalifahtravel.com</span>
+                  <span dir="ltr">ABUKHALIFATRAVEL@GMAIL.COM</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-5 h-5 text-primary" />
@@ -78,6 +82,8 @@ export function Footer() {
                   <motion.a
                     key={social.name}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.95 }}
@@ -128,7 +134,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="text-muted-foreground">&copy; {currentYear} أبو خليفه للسفر والسياحة. جميع الحقوق محفوظة.</p>
+          <p className="text-muted-foreground">&copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق محفوظة.</p>
         </motion.div>
       </div>
     </footer>

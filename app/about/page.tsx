@@ -33,14 +33,14 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              عن أبو خليفة للسفر والسياحة
+              عن أبو خليفة العالمية للسفر والسياحة
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#458A47] to-[#F5951C] mx-auto mb-6"></div>
           </div>
 
           <div className="prose prose-lg max-w-none mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              أبو خليفة للسفر والسياحة هي وكالة متخصصة في خدمات التأشيرات
+              أبو خليفة العالمية للسفر والسياحة هي وكالة متخصصة في خدمات التأشيرات
               والسفر، تأسست لتقديم حلول موثوقة وسريعة للمسافرين، رجال الأعمال،
               والشركات. نعمل بشغف وحرفية عالية لجعل تجربة السفر والحصول على
               التأشيرات تجربة سهلة وخالية من المتاعب.
@@ -60,8 +60,7 @@ export default function AboutPage() {
                   تخصصنا
                 </h3>
                 <p className="relative z-50 mb-4 text-base font-normal text-gray-600 leading-relaxed">
-                  إصدار التأشيرات السياحية والتجارية، استخراج الدعوات الحكومية،
-                  وتصديق الوثائق والمستندات
+                  حجوزات الطيران، إصدار التأشيرات السياحية والعلاجية والتجارية، إستخراج الدعوات الحكومية والقبولات الجامعية وتصديق المستندات
                 </p>
                 <Meteors number={20} />
               </div>
@@ -153,8 +152,8 @@ export default function AboutPage() {
             <div className="relative h-[700px]">
               <div className="relative h-full rounded-2xl overflow-hidden shadow-xl bg-white">
                 <img
-                  src="/about us .jpg"
-                  alt="أبو خليفة للسفر والسياحة"
+                  src="/about us image .jpeg"
+                  alt="أبو خليفة العالمية للسفر والسياحة"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -172,7 +171,7 @@ export default function AboutPage() {
                     رعاية متخصصة
                   </h3>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    أبو خليفة للسفر والسياحة هي وكالة رائدة متخصصة في تقديم
+                    أبو خليفة العالمية للسفر والسياحة هي وكالة رائدة متخصصة في تقديم
                     خدمات التأشيرات والسفر. فريقنا المختص يستخدم أحدث التقنيات
                     والأنظمة لإصدار التأشيرات السياحية والتجارية، استخراج
                     الدعوات الحكومية، وتصديق الوثائق بكل دقة وفعالية.
@@ -184,7 +183,7 @@ export default function AboutPage() {
                     نهج مخصص
                   </h3>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    في أبو خليفة، نؤمن بضرورة تقديم نهج مخصص لكل عميل. نعمل على
+                    في أبو خليفة العالمية، نؤمن بضرورة تقديم نهج مخصص لكل عميل. نعمل على
                     إنشاء برامج مخصصة مصممة خصيصاً لاحتياجات كل فرد أو شركة، مما
                     يضمن أعلى مستوى من الرعاية ونتائج مثالية في الحصول على
                     التأشيرات وإتمام إجراءات السفر.
@@ -284,7 +283,7 @@ export default function AboutPage() {
 
       {/* Fixed WhatsApp Button */}
       <a
-        href="https://wa.me/967770115540"
+        href="https://wa.me/96890938925"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 bg-[#F5951C] text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors z-40"

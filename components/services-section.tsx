@@ -207,7 +207,7 @@ export function ServicesSection() {
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/services/تاشيره  (4).jpeg"
+              src="/services/2 تصديق وثاىق.jpeg"
               alt="تصديق الوثائق"
               width={500}
               height={500}
@@ -247,7 +247,7 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="/services/حجز تذاكر.jpeg"
+              src="/services/doc 1.jpg"
               alt="حجز تذاكر الطيران"
               width={500}
               height={500}
@@ -268,6 +268,14 @@ export function ServicesSection() {
               </div>
               <span className="text-sm md:text-base text-gray-800 font-medium">
                 خدمات المعارض الدولية
+              </span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white/50 hover:bg-white/80 transition-colors border border-gray-100 shadow-md hover:shadow-lg">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#458A47] to-[#F5951C] flex items-center justify-center flex-shrink-0">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-sm md:text-base text-gray-800 font-medium">
+                تأسيس الشركات في عدة دول{" "}
               </span>
             </div>
             <div className="flex items-center gap-3 p-3 rounded-lg bg-white/50 hover:bg-white/80 transition-colors border border-gray-100 shadow-md hover:shadow-lg">
@@ -294,14 +302,14 @@ export function ServicesSection() {
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <img
-              src="/services/موافقه امنيه .jpeg"
+              src="/services/الاستشارات 2.jpeg"
               alt="الموافقات الأمنية"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="/services/تاشيره  (6).jpeg"
+              src="/services/الاستشارات.jpeg"
               alt="الاستشارات والمساندة"
               width={500}
               height={500}
@@ -377,6 +385,14 @@ export function ServicesSection() {
               </div>
               <span className="text-sm md:text-base text-gray-800 font-medium">
                 خدمات السفر والسياحة
+              </span>
+            </div>
+            <div className="flex items-center gap-3 p-3 rounded-lg bg-white/50 hover:bg-white/80 transition-colors border border-gray-100 shadow-md hover:shadow-lg">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#458A47] to-[#F5951C] flex items-center justify-center flex-shrink-0">
+                <Globe className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-sm md:text-base text-gray-800 font-medium">
+                خدمات السياحة العلاجية{" "}
               </span>
             </div>
           </div>

@@ -1,12 +1,19 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import {
+  Instagram,
+  Facebook,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     "روابط سريعة": [
@@ -17,17 +24,26 @@ export function Footer() {
       { name: "اتصل بنا", href: "/contact" },
     ],
     خدماتنا: [
-      { name: "حجز الطيران", href: "/services" },
-      { name: "حجز الفنادق", href: "/services" },
-      { name: "جولات سياحية", href: "/services" },
+      { name: "تأشيرات", href: "/services" },
+      { name: "سياحة علاجية", href: "/services" },
+      { name: "تصديق المستندات", href: "/services" },
+      { name: "خدمات رجال الاعمال", href: "/services" },
     ],
-  }
+  };
 
   const socialLinks = [
     { name: "Twitter", icon: Twitter, href: "https://x.com/abbasadnan323" },
-    { name: "Facebook", icon: Facebook, href: "https://share.google/nmlPB59FCz6WmGkj5" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj" },
-  ]
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://share.google/nmlPB59FCz6WmGkj5",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj",
+    },
+  ];
 
   return (
     <footer className="bg-gradient-to-b from-background to-muted/50 border-t border-border">
@@ -51,20 +67,21 @@ export function Footer() {
                   className="h-16 w-auto object-contain mb-2"
                 />
               </Link>
-              <h3 className="text-3xl font-bold text-primary mb-4">أبو خليفة العالمية للسفر والسياحة</h3>
+              <h3 className="text-3xl font-bold text-primary mb-4">
+                أبو خليفة العالمية للسفر والسياحة
+              </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-                شركة رائدة في مجال السفر والسياحة، نقدم أفضل الخدمات لجعل رحلاتكم تجربة لا تُنسى منذ أكثر من 20 عاماً.
+                شركة رائدة في مجال السفر والسياحة، نقدم أفضل الخدمات لجعل
+                رحلاتكم تجربة لا تُنسى منذ أكثر من 20 عاماً.
               </p>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>رقم عمان:</span>
                   <span dir="ltr">0096890938925</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>رقم اليمني:</span>
                   <span dir="ltr">+967770115540</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
@@ -73,7 +90,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
                   <MapPin className="w-5 h-5 text-primary" />
-                  <span>شارع الملك فهد، الرياض، السعودية</span>
+                  <span>مسقط الخوير الجنوبية</span>
                 </div>
               </div>
 
@@ -107,7 +124,9 @@ export function Footer() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="font-bold text-foreground text-xl mb-4">{category}</h4>
+                  <h4 className="font-bold text-foreground text-xl mb-4">
+                    {category}
+                  </h4>
                   <ul className="space-y-3">
                     {links.map((link) => (
                       <li key={link.name}>
@@ -134,9 +153,12 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="text-muted-foreground">&copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق محفوظة.</p>
+          <p className="text-muted-foreground">
+            &copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق
+            محفوظة.
+          </p>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

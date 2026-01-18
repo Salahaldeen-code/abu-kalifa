@@ -23,18 +23,24 @@ export function Footer() {
       { name: "تواصل معنا", href: "/contact" },
     ],
     خدماتنا: [
-      { name: "التأشيرات السياحية", href: "/services" },
-      { name: "التأشيرات التجارية", href: "/services" },
-      { name: "تأشيرات العمرة", href: "/services" },
-      { name: "تصديق الوثائق", href: "/services" },
-      { name: "الدعوات الرسمية", href: "/services" },
+      { name: "سياحة علاجية", href: "/services" },
+      { name: "تصديق المستندات", href: "/services" },
+      { name: "خدمات رجال الاعمال", href: "/services" },
     ],
   };
 
   const socialLinks = [
     { name: "Twitter", icon: Twitter, href: "https://x.com/abbasadnan323" },
-    { name: "Facebook", icon: Facebook, href: "https://share.google/nmlPB59FCz6WmGkj5" },
-    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj" },
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://share.google/nmlPB59FCz6WmGkj5",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/abu_khalifa.om?igsh=d3U1cTh5dmRzbDRj",
+    },
   ];
 
   return (
@@ -70,12 +76,10 @@ export function Footer() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-gray-600">
                   <Phone className="w-5 h-5 text-[#F5951C]" />
-                  <span>رقم عمان:</span>
                   <span dir="ltr">0096890938925</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
                   <Phone className="w-5 h-5 text-[#F5951C]" />
-                  <span>رقم اليمني:</span>
                   <span dir="ltr">+967770115540</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
@@ -84,7 +88,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
                   <MapPin className="w-5 h-5 text-[#F5951C]" />
-                  <span>اليمن - صنعاء | سلطنة عمان - مسقط</span>
+                  <span>مسقط الخوير الجنوبية</span>
                 </div>
               </div>
 
@@ -148,7 +152,8 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <p className="text-gray-600">
-            &copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق محفوظة.
+            &copy; {currentYear} أبو خليفة العالمية للسفر والسياحة. جميع الحقوق
+            محفوظة.
           </p>
         </motion.div>
       </div>

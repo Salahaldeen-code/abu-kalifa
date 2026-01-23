@@ -16,19 +16,20 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/Abu-_logo-1.png",
+        type: "image/png",
+      },
+      {
+        url: "/Abu-_logo-1.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/Abu-_logo-1.png",
         media: "(prefers-color-scheme: dark)",
       },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
     ],
-    apple: "/apple-icon.png",
+    apple: "/Abu-_logo-1.png",
+    shortcut: "/Abu-_logo-1.png",
   },
   openGraph: {
     title: "أبو خليفة العالمية للسفر والسياحة | خدمات التأشيرات",

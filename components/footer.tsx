@@ -26,6 +26,7 @@ export function Footer() {
       { name: "سياحة علاجية", href: "/services" },
       { name: "تصديق المستندات", href: "/services" },
       { name: "خدمات رجال الاعمال", href: "/services" },
+      { name: "خدمات رجال الاعمال", href: "/services" },
     ],
   };
 

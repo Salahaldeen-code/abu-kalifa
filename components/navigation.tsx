@@ -19,7 +19,7 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" prefetch={false} className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
               <span className="text-white font-bold text-lg">أ</span>
             </div>
@@ -35,6 +35,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className="text-gray-700 hover:text-primary font-medium transition-colors"
               >
                 {item.label}
@@ -70,6 +71,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className="block px-4 py-3 text-gray-700 hover:bg-gray-100/50 hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >

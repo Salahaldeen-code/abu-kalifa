@@ -116,7 +116,7 @@ export function ServicesSection() {
                     {service.description}
                   </p>
 
-                  <Link href={service.href}>
+                  <Link href={service.href} prefetch={false}>
                     <motion.div
                       className="mt-6 text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all cursor-pointer"
                       whileHover={{ x: 5 }}
@@ -147,6 +147,7 @@ export function ServicesSection() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/services"
+                prefetch={false}
                 className="px-8 py-4 border-2 border-[#458A47] text-[#458A47] rounded-lg font-semibold text-center hover:bg-[#458A47] hover:text-white transition-all inline-block"
               >
                 تعرف على خدماتنا

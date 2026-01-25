@@ -111,7 +111,7 @@ export function Header() {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <Link href="/" className="flex items-center">
+            <Link href="/" prefetch={false} className="flex items-center">
               <Image
                 src="/Abu-_logo-1.png"
                 alt="أبو خليفة"
@@ -139,6 +139,7 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
+                    prefetch={false}
                     className={cn(
                       "text-base font-medium transition-colors hover:text-accent",
                       isScrolled ? "text-foreground" : "text-white",
@@ -218,6 +219,7 @@ export function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  prefetch={false}
                   className="text-foreground font-medium hover:text-primary transition-colors px-4 py-2"
                   onClick={(e) => {
                     setIsMobileMenuOpen(false);

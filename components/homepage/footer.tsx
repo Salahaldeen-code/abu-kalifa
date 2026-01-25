@@ -59,7 +59,7 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Link href="/" className="inline-block mb-4">
+              <Link href="/" prefetch={false} className="inline-block mb-4">
                 <Image
                   src="/Abu-_logo-1.png"
                   alt="أبو خليفة"

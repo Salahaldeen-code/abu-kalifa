@@ -18,6 +18,8 @@ export function ContactSection() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -31,14 +33,25 @@ export function ContactSection() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real application, you would send this data to a backend service
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
+    setSubmitError(null);
+    setIsSubmitting(true);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        setSubmitError(data.error || "حدث خطأ. يرجى المحاولة لاحقاً.");
+        return;
+      }
+
+      setIsSubmitted(true);
       setFormData({
         firstName: "",
         lastName: "",
@@ -47,8 +60,12 @@ export function ContactSection() {
         subject: "",
         message: "",
       });
-      setIsSubmitted(false);
-    }, 3000);
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } catch {
+      setSubmitError("تعذر الإرسال. تحقق من الاتصال أو تواصل عبر الواتساب.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -64,8 +81,13 @@ export function ContactSection() {
           {isSubmitted && (
             <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
               <p className="text-green-700 font-bold">
-                شكراً لتواصلك معنا! سنرد عليك قريباً
+                شكراً لتواصلك معنا! تم إرسال رسالتك وسنرد عليك قريباً.
               </p>
+            </div>
+          )}
+          {submitError && (
+            <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg text-center">
+              <p className="text-red-700 font-bold">{submitError}</p>
             </div>
           )}
 
@@ -206,9 +228,10 @@ export function ContactSection() {
               <div className="flex gap-4">
                 <Button
                   type="submit"
-                  className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-bold text-lg transition-colors"
+                  disabled={isSubmitting}
+                  className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-bold text-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  إرسال الرسالة
+                  {isSubmitting ? "جاري الإرسال..." : "إرسال الرسالة"}
                 </Button>
                 <a
                   href="https://wa.me/96890938925"

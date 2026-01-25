@@ -283,9 +283,10 @@ export default function AboutPage() {
 
       {/* Fixed WhatsApp Button */}
       <a
-        href="https://wa.me/96890938925"
+        href="https://api.whatsapp.com/send?phone=96890938925"
         target="_blank"
         rel="noopener noreferrer"
+        title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
         className="fixed bottom-6 left-6 bg-[#F5951C] text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors z-40"
         aria-label="تواصل عبر واتساب"
       >

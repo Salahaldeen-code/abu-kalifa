@@ -313,9 +313,10 @@ export function HeroSection() {
                 </Button>
               </motion.a>
               <motion.a
-                href="https://wa.me/96890938925"
+                href="https://api.whatsapp.com/send?phone=96890938925"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
                 className="relative"
                 whileTap={{ scale: 0.95 }}
               >

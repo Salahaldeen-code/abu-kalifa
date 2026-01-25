@@ -46,9 +46,10 @@ export function Navigation() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/96890938925"
+              href="https://api.whatsapp.com/send?phone=96890938925"
               target="_blank"
               rel="noopener noreferrer"
+              title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
               className="px-6 py-2 bg-secondary text-white rounded-lg hover:bg-orange-600 transition-colors font-medium"
             >
               واتساب
@@ -79,9 +80,10 @@ export function Navigation() {
               </Link>
             ))}
             <a
-              href="https://wa.me/96890938925"
+              href="https://api.whatsapp.com/send?phone=96890938925"
               target="_blank"
               rel="noopener noreferrer"
+              title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
               className="block m-4 px-4 py-3 bg-secondary text-white text-center rounded-lg hover:bg-orange-600 transition-colors font-medium"
             >
               واتساب

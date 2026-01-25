@@ -234,9 +234,10 @@ export function ContactSection() {
                   {isSubmitting ? "جاري الإرسال..." : "إرسال الرسالة"}
                 </Button>
                 <a
-                  href="https://wa.me/96890938925"
+                  href="https://api.whatsapp.com/send?phone=96890938925"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
                   className="flex-1 flex items-center justify-center bg-secondary hover:bg-orange-600 text-white py-3 rounded-lg font-bold text-lg transition-colors"
                 >
                   واتساب

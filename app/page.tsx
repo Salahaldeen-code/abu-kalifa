@@ -166,9 +166,10 @@ export default function HomePage() {
 
         {/* WhatsApp Floating Button */}
         <motion.a
-          href="https://wa.me/96890938925"
+          href="https://api.whatsapp.com/send?phone=96890938925"
           target="_blank"
           rel="noopener noreferrer"
+          title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
           className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl hover:bg-[#20BA5A] transition-colors duration-300 group"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

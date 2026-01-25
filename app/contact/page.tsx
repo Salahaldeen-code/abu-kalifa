@@ -90,12 +90,10 @@ export default function ContactPage() {
     const hasData = Object.values(formData).some((value) => value.trim() !== "");
     
     if (!hasData) {
-      // If no data, just open WhatsApp normally
-      window.open("https://wa.me/96890938925", "_blank");
+      window.open("https://api.whatsapp.com/send?phone=96890938925", "_blank");
       return;
     }
 
-    // Format the message with form data
     const message = `مرحباً، أريد التواصل بخصوص:
 
 الاسم: ${formData.firstName} ${formData.lastName}
@@ -104,10 +102,7 @@ export default function ContactPage() {
 الموضوع: ${getSubjectLabel(formData.subject)}
 الرسالة: ${formData.message}`;
 
-    // Encode the message for URL
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/96890938925?text=${encodedMessage}`;
-    
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=96890938925&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -135,13 +130,17 @@ export default function ContactPage() {
                 <p>0096890938925</p>
               </div>
               <a
-                href="https://wa.me/96890938925"
+                href="https://api.whatsapp.com/send?phone=96890938925"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
                 className="block mt-6 px-4 py-2 bg-[#458A47] text-white rounded-lg hover:bg-[#458A47]/90 transition-colors font-bold text-sm"
               >
                 تواصل عبر واتساب
               </a>
+              <p className="mt-3 text-xs text-gray-500">
+                إن لم يعمل الرابط (جدار ناري/شبكة): انسخ 0096890938925 وافتح واتساب يدوياً.
+              </p>
             </Card>
 
             {/* Email Card */}
@@ -347,6 +346,7 @@ export default function ContactPage() {
                 <button
                   type="button"
                   onClick={handleWhatsAppClick}
+                  title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
                   className="flex-1 flex items-center justify-center bg-secondary hover:bg-orange-600 text-white py-3 rounded-lg font-bold text-lg transition-colors"
                 >
                   واتساب
@@ -397,9 +397,10 @@ export default function ContactPage() {
 
       {/* Fixed WhatsApp Button */}
       <a
-        href="https://wa.me/96890938925"
+        href="https://api.whatsapp.com/send?phone=96890938925"
         target="_blank"
         rel="noopener noreferrer"
+        title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
         className="fixed bottom-6 right-6 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-orange-600 transition-colors z-40"
         aria-label="تواصل عبر واتساب"
       >

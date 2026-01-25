@@ -135,9 +135,10 @@ export function ServicesSection() {
         <Reveal delay={0.6}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-16">
             <motion.a
-              href="https://wa.me/96890938925"
+              href="https://api.whatsapp.com/send?phone=96890938925"
               target="_blank"
               rel="noopener noreferrer"
+              title="واتساب: 0096890938925 — إن لم يفتح الرابط انسخ الرقم وأضفه في واتساب"
               className="px-8 py-4 bg-[#458A47] text-white rounded-lg font-semibold text-center hover:bg-[#458A47]/90 transition-all shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
